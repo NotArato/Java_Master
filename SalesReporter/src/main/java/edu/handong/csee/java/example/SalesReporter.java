@@ -12,7 +12,7 @@ public class SalesReporter {
 
 	public static void main(String[] args) {
 		
-		SalesReporter myReporter = new SalesReporter();
+		SalesReporter myReporter = new SalesReporter();	// New instance
 		myReporter.run();
 	}
 	
@@ -25,7 +25,7 @@ public class SalesReporter {
 		sortByNameAndPrint();
 	}
 	
-	private void sortByNameAndPrint() {
+	private void sortByNameAndPrint() {	// Sorting
 		
 		Arrays.sort(team);
 		
@@ -41,7 +41,7 @@ public class SalesReporter {
 		Scanner myScanner = new Scanner(System.in);
 		
 		System.out.println("Input the number sales men: ");
-		numOfSalesman = myScanner.nextInt();		
+		numOfSalesman = myScanner.nextInt();	// Get user input
 		
 		team = new Salesman[numOfSalesman];
 		
@@ -65,7 +65,7 @@ public class SalesReporter {
 		myScanner.close();
 	}
 	
-	public void cacluateAverageSales() {
+	public void cacluateAverageSales() {	// Calculate average sale
 		
 		double sum = 0;
 		
@@ -76,7 +76,7 @@ public class SalesReporter {
 		averageSales = sum/team.length;
 	}
 	
-	public void calculateHighestSales() {
+	public void calculateHighestSales() {	// Calculate highest sale
 		Double currentHighestValue = 0.0;
 		
 		for(Salesman sm:team) {

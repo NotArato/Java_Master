@@ -1,6 +1,7 @@
 package edu.handong.csee.java.example;
 
 public class Salesman implements Comparable<Salesman> {
+	//	Private variable
 	private String name;
 	private double sales;
 	
