@@ -18,10 +18,10 @@ public class SalesReporter {
 	
 	public void run() {
 		getData();
-		cacluateAverageSales();
+		calculateAverageSales();
 		calculateHighestSales();
 		printOutResults();
-		
+
 		sortByNameAndPrint();
 	}
 	
@@ -36,29 +36,29 @@ public class SalesReporter {
 		}
 	}
 
-	public void getData() {
-	
+	public void getData() {	// Get user input
+
 		Scanner myScanner = new Scanner(System.in);
-		
+
 		System.out.println("Input the number sales men: ");
-		numOfSalesman = myScanner.nextInt();	// Get user input
-		
+		numOfSalesman = myScanner.nextInt();
+
 		team = new Salesman[numOfSalesman];
-		
+
 		for(int i=0; i<numOfSalesman;i++) {
-			
-			myScanner.nextLine();
-			
+
+			myScanner.nextLine(); // Consume the newline left by nextInt()
+
 			System.out.println("Enter data for associate number" + (i+1));
-			
+
 			System.out.println("Enter name:");
 			String name = myScanner.nextLine();
-			
+
 			System.out.println("Enter Sales:");
 			double sales = myScanner.nextDouble();
-			
+
 			team[i] = new Salesman();
-			
+
 			team[i].setName(name);
 			team[i].setSales(sales);
 		}

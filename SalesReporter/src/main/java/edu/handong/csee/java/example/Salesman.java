@@ -22,7 +22,7 @@ public class Salesman implements Comparable<Salesman> {
 	}
 
 	@Override
-	public int compareTo(Salesman anotherSalesman) {
+	public int compareTo(Salesman anotherSalesman) {	// Compare
 		
 		return name.compareTo(anotherSalesman.name);
 	}
