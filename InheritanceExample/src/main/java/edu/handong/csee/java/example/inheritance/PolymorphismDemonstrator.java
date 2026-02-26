@@ -1,7 +1,7 @@
 package edu.handong.csee.java.example.inheritance;
 
 public class PolymorphismDemonstrator {
-	public static void main(String[] args) {
+	public static void main(String[] args) {	// main method is the entry point of the program
 		Person[] people = new Person[4];
 
 		people[0] = new Undergraduate("Cotty, Manny", 4910, 1);
@@ -21,14 +21,14 @@ public class PolymorphismDemonstrator {
 			System.out.println();
 		}
 		
-		Undergraduate ug = new Undergraduate("Nam, JC", 1111, 4);
+		Undergraduate ug = new Undergraduate("Nam, JC", 1111, 4);	// creating an Undergraduate object and assigning it to a variable of type Undergraduate
 		Student st = ug;
 		Person ps = ug;
 		Object obj = ug;
 		
 		st.writeOutput();
 		ps.writeOutput();
-		System.out.println(obj.toString());
+		System.out.println(obj.toString());	// toString() method is defined in Object class, so it can be called on obj which is of type Object
 
 	}
 }
