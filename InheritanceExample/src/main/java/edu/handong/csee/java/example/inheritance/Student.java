@@ -1,5 +1,10 @@
 package edu.handong.csee.java.example.inheritance;
 
+/*
+ * This class represents a Student, which is a subclass of Person. 
+ * It has an additional attribute studentNumber and methods to get and set the student number, as well as a method to write the output of the student's information. 
+ * It also has a method to compare two Student objects for equality based on their name and student number.
+*/
 public class Student extends Person{
 	
 	private int studentNumber;

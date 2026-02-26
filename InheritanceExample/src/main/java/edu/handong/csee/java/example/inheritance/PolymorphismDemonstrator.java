@@ -1,5 +1,13 @@
 package edu.handong.csee.java.example.inheritance;
 
+/*
+	 * This class demonstrates polymorphism in Java. 
+ * Polymorphism allows us to treat objects of different classes that are related by inheritance as objects of a common superclass. 
+ * In this example, we have a superclass Person and two subclasses Undergraduate and Student. 
+ * We can create an array of Person type and store objects of both Undergraduate and Student types in it. 
+ * We can then call methods on these objects without needing to know their specific types, as long as those methods are defined in the Person class.
+
+*/
 public class PolymorphismDemonstrator {
 	public static void main(String[] args) {	// main method is the entry point of the program
 		Person[] people = new Person[4];
